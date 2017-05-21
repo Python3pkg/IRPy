@@ -24,12 +24,12 @@ class NewtonRaphson(object):
 
 if __name__ == '__main__':
 
-    print NewtonRaphson.__doc__
+    print(NewtonRaphson.__doc__)
     F = NewtonRaphson(x=1)
 
-    print "Begin, the auto coherent resolution..."
+    print("Begin, the auto coherent resolution...")
     while abs(F.x - F.x_next) > 1.e-9:
         F.x = F.x_next
 
     assert (abs(F.x - 0.739085133) < 1.e-9)
-    print "Success! x={0:.9f}".format(F.x)
+    print("Success! x={0:.9f}".format(F.x))

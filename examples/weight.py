@@ -37,11 +37,11 @@ class WeightFactory(object):
 
 if __name__ == '__main__':
 
-    print WeightFactory.__doc__
-    print "Rectangle dimension 1x1x1 "
+    print(WeightFactory.__doc__)
+    print("Rectangle dimension 1x1x1 ")
     f = WeightFactory(1,1,1)
     assert ( abs(f.weight - 76970.961) < 1.e-4)
-    print "Weight: {0} Newton".format(f.weight)
+    print("Weight: {0} Newton".format(f.weight))
 
 #    print "We are now on the  moon (change the acceleration gravity accordingly)"
 #    f.g = 1.622
